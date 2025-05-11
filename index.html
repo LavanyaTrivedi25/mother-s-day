@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>To the World’s Best Mummy</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Toggle Music Button -->
+  <button class="toggle-button" onclick="toggleMusic()">🎵 Play</button>
+
+  <!-- Background Music -->
+  <audio id="bg-music" loop>
+    <source src="music.mp3" type="audio/mpeg" />
+    Your browser does not support the audio element.
+  </audio>
+
+  <header>
+    <h1>To the World’s Best Mummy</h1>
+    <p>Happy Mother's Day 💖</p>
+  </header>
+
+  <section> 
+    <h2>About Mom</h2> 
+    <p>She is the kindest soul, the strongest person I know, and the heart of our home. Her love is endless and her smile is everything.</p> 
+    <p>Every smile she share and every word of encouragement she make shapes a perfect person.</p> 
+  </section>
+
+  <section>
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <img src="your-photo2.jpg" alt="Mom 2">
+    </div>
+  </section>
+
+  <section>
+    <h2>Thank You</h2>
+    <p>Dr. Noopur Trivedi</p>
+  </section>
+
+  <footer>
+    Made with love by Aditi | Mother's Day 2025 💐
+  </footer>
+
+  <script>
+    const music = document.getElementById("bg-music");
+    const button = document.querySelector(".toggle-button");
+
+    function toggleMusic() {
+      if (music.paused) {
+        music.play();
+        button.textContent = "⏸ Pause";
+      } else {
+        music.pause();
+        button.textContent = "🎵 Play";
+      }
+    }
+  </script>
+</body>
+</html>
